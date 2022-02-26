@@ -6,3 +6,8 @@ generate client stub:protoc-gen-grpc -I . --js_out=import_style=commonjs,binary:
 ###dependencies:
     pip install grpcio grpcio-tools //for python server
     npm install grpc google-protobuf @grpc/prot-loader //for JS stub
+### usage :
+    git clone https://github.com/imededin/grpc-chat-python-JS.git workdir
+    cd  workdir
+    start python server: python workdir/server/salutation-server.py
+    start js client : node workdir/client1/salutations.js nb //nb represent the number of message to send
