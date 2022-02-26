@@ -1,0 +1,12 @@
+syntax = "proto3" ;
+
+service salutation{
+    rpc helloreq(helloRequest) returns(helloResponse);
+    rpc hellostream(stream helloRequest) returns(stream helloResponse);
+}
+message helloRequest {
+    string message =1;
+}
+message helloResponse{
+    string messageR =1;
+}
